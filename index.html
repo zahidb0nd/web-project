@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubConnect - College Club & Event Management System</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="header" class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-40">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a data-page="home" class="text-2xl font-bold text-white cursor-pointer">ClubConnect</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a data-page="home" class="nav-link nav-link-active">Home</a>
+                <a data-page="features" class="nav-link">Features</a>
+                <a data-page="workflow" class="nav-link">Workflow</a>
+                <a data-page="clubs" class="nav-link">Clubs</a>
+                <a data-page="team" class="nav-link">Team</a>
+            </div>
+            <button id="demo-btn-nav" class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors">Request a Demo</button>
+            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">☰</button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90 flex-col items-center py-4">
+            <a data-page="home" class="block py-2 nav-link">Home</a>
+            <a data-page="features" class="block py-2 nav-link">Features</a>
+            <a data-page="workflow" class="block py-2 nav-link">Workflow</a>
+            <a data-page="clubs" class="block py-2 nav-link">Clubs</a>
+            <a data-page="team" class="block py-2 nav-link">Team</a>
+            <button id="demo-btn-mobile" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors">Request a Demo</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="page-home" class="page-section">
+            <!-- All home page sections go here -->
+            <section id="hero" class="hero-bg min-h-screen flex items-center justify-center text-center">
+                <div class="container mx-auto px-6">
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight">ClubConnect</h1>
+                    <p class="mt-4 text-lg md:text-xl text-sky-200 font-light max-w-3xl mx-auto">The Central Hub for Campus Life. Connecting Students, Empowering Clubs.</p>
+                    <p class="mt-2 text-2xl font-semibold text-white">A BCA 5th Semester Project</p>
+                    <div class="mt-8">
+                        <button id="demo-btn-hero" class="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all transform hover:scale-105">Request a Demo</button>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="py-20">
+                 <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-4xl font-bold text-white mb-4">About The Project</h2>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
+                    <p class="max-w-3xl mx-auto text-lg text-gray-400">ClubConnect is a comprehensive web-based platform designed to streamline club and event management within a college campus. It addresses the challenge of disconnected communication between students and clubs by providing a single, unified system for discovery, engagement, and administration. Our goal is to foster a more vibrant and organized campus community.</p>
+                </div>
+            </section>
+            <section id="features-overview" class="py-20 bg-[#161B22]">
+                 <div class="container mx-auto px-6">
+                    <h2 class="text-4xl font-bold text-white text-center mb-4">A Platform for Everyone</h2>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto mb-12"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                        <div class="glass-card rounded-lg p-8"><h3 class="text-2xl font-bold text-sky-400 mb-4">Students</h3><p class="text-gray-400">Discover clubs, join events, and stay connected with campus life, all in one place.</p></div>
+                        <div class="glass-card rounded-lg p-8"><h3 class="text-2xl font-bold text-sky-400 mb-4">Coordinators</h3><p class="text-gray-400">Manage members, create events, and communicate with your club effortlessly.</p></div>
+                        <div class="glass-card rounded-lg p-8"><h3 class="text-2xl font-bold text-sky-400 mb-4">Admins</h3><p class="text-gray-400">Oversee all club activities and gain insights into campus-wide engagement.</p></div>
+                    </div>
+                    <div class="text-center mt-12"><button data-page="features" class="nav-link-button bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors text-lg">Explore All Features</button></div>
+                </div>
+            </section>
+            <section id="workflow-home" class="py-20">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-4xl font-bold text-white text-center mb-4">System Workflow</h2>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto mb-12"></div>
+                    <div class="max-w-3xl mx-auto">
+                        <div class="relative border-l-2 border-gray-700">
+                            <div class="mb-8 ml-6"><span class="absolute flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full -left-3 ring-8 ring-gray-900"></span><h3 class="flex items-center mb-1 text-lg font-semibold text-white">1. Discover & Join</h3><p class="text-base font-normal text-gray-400">Students browse a directory of all campus clubs, view their profiles, and join with a single click.</p></div>
+                            <div class="mb-8 ml-6"><span class="absolute flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full -left-3 ring-8 ring-gray-900"></span><h3 class="flex items-center mb-1 text-lg font-semibold text-white">2. Engage & Participate</h3><p class="text-base font-normal text-gray-400">Club coordinators create and publish events. Students can view event calendars and register for workshops, seminars, and competitions.</p></div>
+                            <div class="mb-8 ml-6"><span class="absolute flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full -left-3 ring-8 ring-gray-900"></span><h3 class="flex items-center mb-1 text-lg font-semibold text-white">3. Manage & Communicate</h3><p class="text-base font-normal text-gray-400">Coordinators manage their member lists, post announcements, and track event registrations through a dedicated dashboard.</p></div>
+                            <div class="ml-6"><span class="absolute flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full -left-3 ring-8 ring-gray-900"></span><h3 class="flex items-center mb-1 text-lg font-semibold text-white">4. Oversee & Analyze</h3><p class="text-base font-normal text-gray-400">College administrators have a global view of all club activities, member statistics, and engagement trends across the campus.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="showcase-home" class="py-20 bg-[#161B22]">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-4xl font-bold text-white text-center mb-4">Dashboard Showcase</h2>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto mb-12"></div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="text-center"><h3 class="text-xl font-semibold text-white mb-4">Student Dashboard</h3><img class="h-auto max-w-full rounded-lg border-2 border-gray-700" src="https://placehold.co/600x400/161B22/FFF?text=Student+View" alt="Student Dashboard Preview"></div>
+                        <div class="text-center"><h3 class="text-xl font-semibold text-white mb-4">Coordinator Dashboard</h3><img class="h-auto max-w-full rounded-lg border-2 border-gray-700" src="https://placehold.co/600x400/161B22/FFF?text=Coordinator+View" alt="Coordinator Dashboard Preview"></div>
+                        <div class="text-center"><h3 class="text-xl font-semibold text-white mb-4">Admin Dashboard</h3><img class="h-auto max-w-full rounded-lg border-2 border-gray-700" src="https://placehold.co/600x400/161B22/FFF?text=Admin+View" alt="Admin Dashboard Preview"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="team-home" class="py-20">
+                <div class="container mx-auto px-6 text-center">
+                     <h2 class="text-4xl font-bold text-white mb-4">The Development Team</h2>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto mb-12"></div>
+                    <p class="text-lg text-gray-400 mb-8">This project was brought to life by dedicated BCA students.</p>
+                    <div class="flex flex-wrap justify-center gap-8">
+                        <div class="text-center"><p class="text-xl font-semibold text-white">Priya Sharma</p><p class="text-blue-400">Lead Developer</p></div>
+                        <div class="text-center"><p class="text-xl font-semibold text-white">Rohan Verma</p><p class="text-blue-400">UI/UX Designer</p></div>
+                        <div class="text-center"><p class="text-xl font-semibold text-white">Aisha Khan</p><p class="text-blue-400">Database Architect</p></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-features" class="page-section hidden">
+            <section id="features-detailed" class="py-20 bg-[#161B22]">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-4xl font-bold text-white text-center mb-4">Core Features</h2>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto mb-12"></div>
+                    <div id="feature-tabs" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-8">
+                        <button data-category="student" class="feature-tab feature-tab-active">For Students</button>
+                        <button data-category="coordinator" class="feature-tab feature-tab-inactive">For Club Coordinators</button>
+                        <button data-category="admin" class="feature-tab feature-tab-inactive">For Admins</button>
+                    </div>
+                    <div id="features-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-workflow" class="page-section hidden">
+            <section class="py-20">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-4xl font-bold text-white text-center mb-4">System Workflow</h2>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto mb-12"></div>
+                    <p class="max-w-3xl mx-auto text-center text-lg text-gray-400 mb-20">
+                        ClubConnect provides a tailored experience for every user. Here’s a step-by-step look at how different roles interact with the platform to create a vibrant campus ecosystem.
+                    </p>
+                    <div class="mb-20"><h3 class="text-3xl font-bold text-sky-400 mb-8 text-center">The Student's Journey</h3><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">1</div><h4 class="text-xl font-semibold mb-2 text-white">Discover</h4><p class="text-gray-400">Browse a comprehensive directory of all campus clubs. Filter by category to find groups that match your interests.</p></div><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">2</div><h4 class="text-xl font-semibold mb-2 text-white">Join</h4><p class="text-gray-400">Join any club with a single click to become a member and start receiving updates and announcements.</p></div><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">3</div><h4 class="text-xl font-semibold mb-2 text-white">Engage</h4><p class="text-gray-400">Explore the central event calendar and register for workshops, competitions, and seminars hosted by clubs.</p></div><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">4</div><h4 class="text-xl font-semibold mb-2 text-white">Connect</h4><p class="text-gray-400">Use your personalized dashboard to see news from your clubs and manage your event registrations.</p></div></div></div>
+                    <div class="mb-20"><h3 class="text-3xl font-bold text-purple-400 mb-8 text-center">The Coordinator's Toolkit</h3><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">1</div><h4 class="text-xl font-semibold mb-2 text-white">Manage</h4><p class="text-gray-400">Use the coordinator dashboard to view your member list and update your club's public profile.</p></div><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">2</div><h4 class="text-xl font-semibold mb-2 text-white">Create</h4><p class="text-gray-400">Easily create and publish new events, providing all necessary details for students to see.</p></div><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">3</div><h4 class="text-xl font-semibold mb-2 text-white">Communicate</h4><p class="text-gray-400">Post announcements directly to your club members' dashboards to keep them informed.</p></div><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">4</div><h4 class="text-xl font-semibold mb-2 text-white">Track</h4><p class="text-gray-400">Monitor event registration numbers in real-time to gauge interest and plan accordingly.</p></div></div></div>
+                    <div><h3 class="text-3xl font-bold text-green-400 mb-8 text-center">The Administrator's Overview</h3><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">1</div><h4 class="text-xl font-semibold mb-2 text-white">Approve</h4><p class="text-gray-400">Review and approve applications for new clubs seeking official campus recognition.</p></div><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">2</div><h4 class="text-xl font-semibold mb-2 text-white">Oversee</h4><p class="text-gray-400">Access a global dashboard with analytics on user engagement and club activity.</p></div><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">3</div><h4 class="text-xl font-semibold mb-2 text-white">Manage</h4><p class="text-gray-400">Assign user roles and manage permissions for coordinators and other administrators.</p></div><div class="glass-card p-6 rounded-lg text-center"><div class="text-5xl font-bold mb-4 text-gray-600">4</div><h4 class="text-xl font-semibold mb-2 text-white">Broadcast</h4><p class="text-gray-400">Send campus-wide announcements that are visible to every user on the platform.</p></div></div></div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-clubs" class="page-section hidden">
+            <section class="py-20 bg-[#161B22]">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-4xl font-bold text-white text-center mb-4">Club Directory</h2>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto mb-12"></div>
+                    
+                    <!-- Search and Filter Controls -->
+                    <div class="flex flex-col md:flex-row gap-4 justify-center mb-12">
+                        <input type="text" id="club-search-input" placeholder="Search for a club..." class="w-full md:w-1/3 bg-gray-900 border border-gray-700 rounded-lg py-2 px-4 text-white focus:outline-none focus:border-blue-500">
+                        <div id="club-filter-buttons" class="flex flex-wrap items-center justify-center gap-2">
+                            <button data-category="all" class="club-filter-btn club-filter-btn-active">All</button>
+                            <button data-category="Technical" class="club-filter-btn">Technical</button>
+                            <button data-category="Cultural" class="club-filter-btn">Cultural</button>
+                            <button data-category="Sports" class="club-filter-btn">Sports</button>
+                            <button data-category="Professional" class="club-filter-btn">Professional</button>
+                        </div>
+                    </div>
+
+                    <!-- Club Grid -->
+                    <div id="clubs-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Club cards will be injected here by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-team" class="page-section hidden"></div>
+
+    </main>
+
+    <footer class="bg-[#161B22] border-t border-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Your College Name. All Rights Reserved.</p>
+            <p>A Project for the Department of Computer Applications</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal-backdrop">
+        <div class="modal-content glass-card rounded-xl shadow-2xl relative">
+            <button id="modal-close-btn" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl">&times;</button>
+            <h3 id="modal-title" class="text-2xl font-bold text-white mb-4">Request a Project Demo</h3>
+            <form>
+                <div class="mb-4"><label for="name" class="block text-gray-400 mb-2">Full Name</label><input type="text" id="name" class="w-full bg-gray-900 border border-gray-700 rounded-lg py-2 px-3 text-white focus:outline-none focus:border-blue-500"></div>
+                <div class="mb-4"><label for="email" class="block text-gray-400 mb-2">Email Address</label><input type="email" id="email" class="w-full bg-gray-900 border border-gray-700 rounded-lg py-2 px-3 text-white focus:outline-none focus:border-blue-500"></div>
+                <div class="mb-6"><label for="college" class="block text-gray-400 mb-2">College/Organization</label><input type="text" id="college" class="w-full bg-gray-900 border border-gray-700 rounded-lg py-2 px-3 text-white focus:outline-none focus:border-blue-500"></div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors">Submit Request</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Your Custom JavaScript -->
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
